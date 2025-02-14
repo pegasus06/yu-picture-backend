@@ -1,7 +1,7 @@
 package com.ruizhou.picturebackend.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
-import cn.hutool.core.collection.CollectionUtil;
+import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.ObjUtil;
 import cn.hutool.core.util.StrUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -17,12 +17,10 @@ import com.ruizhou.picturebackend.service.UserService;
 import com.ruizhou.picturebackend.mapper.UserMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
-import org.springframework.util.StringUtils;
 
 import javax.servlet.http.HttpServletRequest;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -62,10 +60,10 @@ UserServiceImpl extends ServiceImpl<UserMapper, User>
         String encryptPassword = getEncryptPassword(userPassword);
         // 4. 插入数据
         User user = new User();
-        user.setUseraccount(userAccount);
-        user.setUserpassword(encryptPassword);
-        user.setUsername("无名");
-        user.setUserrole(UserRoleEnum.USER.getValue());
+        user.setUserAccount(userAccount);
+        user.setUserPassword(encryptPassword);
+        user.setUserName("无名");
+        user.setUserRole(UserRoleEnum.USER.getValue());
         boolean saveResult = this.save(user);
         if (!saveResult) {
             throw new BusinessException(ErrorCode.SYSTEM_ERROR, "注册失败，数据库错误");
@@ -158,7 +156,7 @@ UserServiceImpl extends ServiceImpl<UserMapper, User>
 
     @Override
     public List<UserVO> getUserVOList(List<User> userList) {
-        if (CollectionUtil.isEmpty(userList)) {
+        if (CollUtil.isEmpty(userList)) {
             return new ArrayList<>();
         }
         return userList.stream().map(this::getUserVO).collect(Collectors.toList());

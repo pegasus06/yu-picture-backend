@@ -21,55 +21,53 @@ public class User {
     /**
      * 账号
      */
-    @TableField("userAccount")
-    private String useraccount;
+    private String userAccount;
 
     /**
      * 密码
      */
-    @TableField("userPassword")
-    private String userpassword;
+    private String userPassword;
 
     /**
      * 用户昵称
      */
-    private String username;
+    private String userName;
 
     /**
      * 用户头像
      */
-    private String useravatar;
+    private String userAvatar;
 
     /**
      * 用户简介
      */
-    private String userprofile;
+    private String userProfile;
 
     /**
      * 用户角色：user/admin
      */
-    private String userrole;
+    private String userRole;
 
     /**
      * 编辑时间
      */
-    private Date edittime;
+    private Date editTime;
 
     /**
      * 创建时间
      */
-    private Date createtime;
+    private Date createTime;
 
     /**
      * 更新时间
      */
-    private Date updatetime;
+    private Date updateTime;
 
     /**
      * 是否删除
      */
     @TableLogic
-    private Integer isdelete;
+    private Integer isDelete;
 
     @Override
     public boolean equals(Object that) {
@@ -84,16 +82,16 @@ public class User {
         }
         User other = (User) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
-            && (this.getUseraccount() == null ? other.getUseraccount() == null : this.getUseraccount().equals(other.getUseraccount()))
-            && (this.getUserpassword() == null ? other.getUserpassword() == null : this.getUserpassword().equals(other.getUserpassword()))
-            && (this.getUsername() == null ? other.getUsername() == null : this.getUsername().equals(other.getUsername()))
-            && (this.getUseravatar() == null ? other.getUseravatar() == null : this.getUseravatar().equals(other.getUseravatar()))
-            && (this.getUserprofile() == null ? other.getUserprofile() == null : this.getUserprofile().equals(other.getUserprofile()))
-            && (this.getUserrole() == null ? other.getUserrole() == null : this.getUserrole().equals(other.getUserrole()))
-            && (this.getEdittime() == null ? other.getEdittime() == null : this.getEdittime().equals(other.getEdittime()))
-            && (this.getCreatetime() == null ? other.getCreatetime() == null : this.getCreatetime().equals(other.getCreatetime()))
-            && (this.getUpdatetime() == null ? other.getUpdatetime() == null : this.getUpdatetime().equals(other.getUpdatetime()))
-            && (this.getIsdelete() == null ? other.getIsdelete() == null : this.getIsdelete().equals(other.getIsdelete()));
+            && (this.getUserAccount() == null ? other.getUserAccount() == null : this.getUserAccount().equals(other.getUserAccount()))
+            && (this.getUserPassword() == null ? other.getUserPassword() == null : this.getUserPassword().equals(other.getUserPassword()))
+            && (this.getUserName() == null ? other.getUserName() == null : this.getUserName().equals(other.getUserName()))
+            && (this.getUserAvatar() == null ? other.getUserAvatar() == null : this.getUserAvatar().equals(other.getUserAvatar()))
+            && (this.getUserProfile() == null ? other.getUserProfile() == null : this.getUserProfile().equals(other.getUserProfile()))
+            && (this.getUserRole() == null ? other.getUserRole() == null : this.getUserRole().equals(other.getUserRole()))
+            && (this.getEditTime() == null ? other.getEditTime() == null : this.getEditTime().equals(other.getEditTime()))
+            && (this.getCreateTime() == null ? other.getCreateTime() == null : this.getCreateTime().equals(other.getCreateTime()))
+            && (this.getUpdateTime() == null ? other.getUpdateTime() == null : this.getUpdateTime().equals(other.getUpdateTime()))
+            && (this.getIsDelete() == null ? other.getIsDelete() == null : this.getIsDelete().equals(other.getIsDelete()));
     }
 
     @Override
@@ -101,16 +99,16 @@ public class User {
         final int prime = 31;
         int result = 1;
         result = prime * result + ((getId() == null) ? 0 : getId().hashCode());
-        result = prime * result + ((getUseraccount() == null) ? 0 : getUseraccount().hashCode());
-        result = prime * result + ((getUserpassword() == null) ? 0 : getUserpassword().hashCode());
-        result = prime * result + ((getUsername() == null) ? 0 : getUsername().hashCode());
-        result = prime * result + ((getUseravatar() == null) ? 0 : getUseravatar().hashCode());
-        result = prime * result + ((getUserprofile() == null) ? 0 : getUserprofile().hashCode());
-        result = prime * result + ((getUserrole() == null) ? 0 : getUserrole().hashCode());
-        result = prime * result + ((getEdittime() == null) ? 0 : getEdittime().hashCode());
-        result = prime * result + ((getCreatetime() == null) ? 0 : getCreatetime().hashCode());
-        result = prime * result + ((getUpdatetime() == null) ? 0 : getUpdatetime().hashCode());
-        result = prime * result + ((getIsdelete() == null) ? 0 : getIsdelete().hashCode());
+        result = prime * result + ((getUserAccount() == null) ? 0 : getUserAccount().hashCode());
+        result = prime * result + ((getUserPassword() == null) ? 0 : getUserPassword().hashCode());
+        result = prime * result + ((getUserName() == null) ? 0 : getUserName().hashCode());
+        result = prime * result + ((getUserAvatar() == null) ? 0 : getUserAvatar().hashCode());
+        result = prime * result + ((getUserProfile() == null) ? 0 : getUserProfile().hashCode());
+        result = prime * result + ((getUserRole() == null) ? 0 : getUserRole().hashCode());
+        result = prime * result + ((getEditTime() == null) ? 0 : getEditTime().hashCode());
+        result = prime * result + ((getCreateTime() == null) ? 0 : getCreateTime().hashCode());
+        result = prime * result + ((getUpdateTime() == null) ? 0 : getUpdateTime().hashCode());
+        result = prime * result + ((getIsDelete() == null) ? 0 : getIsDelete().hashCode());
         return result;
     }
 
@@ -121,16 +119,16 @@ public class User {
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
         sb.append(", id=").append(id);
-        sb.append(", useraccount=").append(useraccount);
-        sb.append(", userpassword=").append(userpassword);
-        sb.append(", username=").append(username);
-        sb.append(", useravatar=").append(useravatar);
-        sb.append(", userprofile=").append(userprofile);
-        sb.append(", userrole=").append(userrole);
-        sb.append(", edittime=").append(edittime);
-        sb.append(", createtime=").append(createtime);
-        sb.append(", updatetime=").append(updatetime);
-        sb.append(", isdelete=").append(isdelete);
+        sb.append(", useraccount=").append(userAccount);
+        sb.append(", userpassword=").append(userPassword);
+        sb.append(", username=").append(userName);
+        sb.append(", useravatar=").append(userAvatar);
+        sb.append(", userprofile=").append(userProfile);
+        sb.append(", userrole=").append(userRole);
+        sb.append(", edittime=").append(editTime);
+        sb.append(", createtime=").append(createTime);
+        sb.append(", updatetime=").append(updateTime);
+        sb.append(", isdelete=").append(isDelete);
         sb.append("]");
         return sb.toString();
     }
