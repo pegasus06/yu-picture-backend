@@ -1409,3 +1409,485 @@ WARN 2025-02-17 15:33:01.778 main AbstractClassEnhancePluginDefine : enhance cla
 WARN 2025-02-17 15:33:01.778 main AbstractClassEnhancePluginDefine : enhance class springfox.documentation.swagger2.web.Swagger2ControllerWebMvc by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
 WARN 2025-02-17 15:33:01.778 main AbstractClassEnhancePluginDefine : enhance class springfox.documentation.swagger2.web.Swagger2ControllerWebMvc by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerForLowVersionInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
 WARN 2025-02-17 15:34:32.564 http-nio-8123-exec-2 AbstractClassEnhancePluginDefine : enhance class org.apache.catalina.core.ApplicationDispatcher by plugin org.apache.skywalking.apm.plugin.tomcat10x.define.ApplicationDispatcherInstrumentation is not activated. Witness class jakarta.servlet.http.HttpServletResponse does not exist. 
+INFO 2025-02-17 15:35:28.947 main SkyWalkingAgent : Skywalking agent transformer has installed. 
+INFO 2025-02-17 15:35:29.034 main Version : SkyWalking agent version: 9.3.0-8b9243c 
+INFO 2025-02-17 15:35:30.609 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-activemq-5.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.609 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-activemq-artemis-jakarta-client-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.609 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-aerospike-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.609 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-armeria-0.84.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.610 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-armeria-0.85.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.610 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-armeria-1.0.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.610 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-asynchttpclient-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.610 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-avro-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.610 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-c3p0-0.9.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.610 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-canal-1.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.610 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-cassandra-java-driver-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.611 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-clickhouse-0.3.1-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.611 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-clickhouse-0.3.2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.611 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-cxf-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.611 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-dubbo-2.7.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.611 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-dubbo-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.611 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-dubbo-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.611 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-elastic-job-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.611 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-elasticjob-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.611 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-elasticsearch-5.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.611 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-elasticsearch-6.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.611 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-elasticsearch-7.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.613 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-feign-default-http-9.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.613 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-finagle-6.25.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.613 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-grizzly-2.x-4.x-work-threadpool-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.613 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-grizzly-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.613 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-grpc-1.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.613 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-guava-eventbus-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.613 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-h2-1.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.613 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-hbase-1.x-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.614 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-hikaricp-3.x-4.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.614 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-httpasyncclient-4.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.614 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-httpclient-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.614 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-httpClient-4.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.614 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-httpclient-5.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.614 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-httpclient-commons-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.614 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-hutool-http-5.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.615 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-hystrix-1.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.615 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-influxdb-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.615 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-jdbc-commons-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.615 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-jersey-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.615 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-jersey-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.615 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-jetty-client-11.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.615 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-jetty-client-9.0-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.615 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-jetty-client-9.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.615 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-jetty-server-11.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.615 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-jetty-server-9.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.615 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-jetty-thread-pool-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.615 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-kafka-commons-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.616 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-kafka-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.617 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-kylin-jdbc-2.6.x-3.x-4.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.617 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-lettuce-5.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.617 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-light4j-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.617 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-mariadb-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.617 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-mongodb-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.617 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-mongodb-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.618 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-mongodb-4.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.618 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-mssql-commons-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.618 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-mssql-jdbc-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.618 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-mssql-jtds-1.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.618 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-mysql-5.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.618 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-mysql-6.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.619 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-mysql-8.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.619 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-mysql-commons-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.619 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-neo4j-4.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.619 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-netty-socketio-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.619 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-nutz-http-1.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.619 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-nutz-mvc-annotation-1.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.619 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-okhttp-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.619 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-okhttp-4.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.620 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-okhttp-common-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.620 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-play-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.620 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-postgresql-8.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.620 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-pulsar-2.2-2.7-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.620 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-pulsar-2.8.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.620 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-pulsar-common-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.620 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-quasar-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.621 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-rabbitmq-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.621 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-redisson-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.621 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-resttemplate-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.621 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-resttemplate-4.3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.621 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-rocketmq-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.621 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-rocketmq-4.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.621 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-rocketMQ-5.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.621 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-rocketmq-client-java-5.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.622 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-servicecomb-java-chassis-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.622 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-sharding-sphere-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.622 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-sharding-sphere-4.1.0-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.622 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-shardingsphere-4.0.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.622 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-shardingsphere-5.0.0-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.622 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-solrj-7.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.622 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-spring-async-annotation-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.623 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-spring-cloud-feign-1.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.623 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-spring-cloud-feign-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.623 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-spring-concurrent-util-4.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.623 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-spring-core-patch-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.623 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-spring-kafka-1.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.623 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-spring-kafka-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.623 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-spring-scheduled-annotation-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.624 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-springmvc-annotation-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.624 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-springmvc-annotation-4.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.624 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-springmvc-annotation-5.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.624 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-springmvc-annotation-commons-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.624 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-spymemcached-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.624 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-struts2-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.624 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-tomcat-thread-pool-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.624 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-undertow-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.624 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-undertow-worker-thread-pool-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.624 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-vertx-core-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.624 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-vertx-core-4.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.624 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-xmemcached-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.626 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-xxl-job-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.626 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\baidu-brpc-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.626 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\baidu-brpc-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.626 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\dbcp-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.626 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\druid-1.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.626 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\dubbo-2.7.x-conflict-patch-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.626 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\dubbo-3.x-conflict-patch-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.627 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\dubbo-conflict-patch-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.627 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\elasticsearch-common-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.627 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\graphql-12.x-15.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.627 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\graphql-16plus-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.627 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\graphql-8.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.627 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\graphql-9.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.627 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\jedis-2.x-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.628 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\jedis-4.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.628 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\jsonrpc4j-1.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.628 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\micronaut-http-client-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.628 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\micronaut-http-server-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.628 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\motan-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.628 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\nats-2.14.x-2.15.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.628 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\okhttp-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.628 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\resteasy-server-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.629 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\resteasy-server-4.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.629 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\resteasy-server-6.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.629 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\resttemplate-commons-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.629 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\sofa-rpc-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.629 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\solon-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.629 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\spring-commons-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.629 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\spring-webflux-5.x-webclient-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.629 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\spring-webflux-6.x-webclient-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.630 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\thrift-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.630 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\tomcat-10x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.630 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\tomcat-7.x-8.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.630 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\websphere-liberty-23.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.631 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\activations\apm-toolkit-kafka-activation-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.631 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\activations\apm-toolkit-log4j-1.x-activation-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.631 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\activations\apm-toolkit-log4j-2.x-activation-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.631 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\activations\apm-toolkit-logback-1.x-activation-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.631 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\activations\apm-toolkit-logging-common-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.631 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\activations\apm-toolkit-meter-activation-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.631 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\activations\apm-toolkit-micrometer-activation-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.632 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\activations\apm-toolkit-opentracing-activation-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.632 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\activations\apm-toolkit-trace-activation-9.3.0.jar loaded. 
+INFO 2025-02-17 15:35:30.632 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\activations\apm-toolkit-webflux-activation-9.3.0.jar loaded. 
+WARN 2025-02-17 15:35:31.079 main AbstractClassEnhancePluginDefine : enhance class org.springframework.web.client.RestTemplate by plugin org.apache.skywalking.apm.plugin.spring.resttemplate.sync.define.RestTemplateInstrumentation3x is not activated. Witness class org.springframework.web.context.support.ServletContextPropertyPlaceholderConfigurer does not exist. 
+WARN 2025-02-17 15:35:31.188 main AbstractClassEnhancePluginDefine : enhance class com.ruizhou.picturebackend.controller.FIleController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+WARN 2025-02-17 15:35:31.188 main AbstractClassEnhancePluginDefine : enhance class com.ruizhou.picturebackend.controller.FIleController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerForLowVersionInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+WARN 2025-02-17 15:35:31.202 main AbstractClassEnhancePluginDefine : enhance class com.ruizhou.picturebackend.controller.UserController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+WARN 2025-02-17 15:35:31.202 main AbstractClassEnhancePluginDefine : enhance class com.ruizhou.picturebackend.controller.UserController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerForLowVersionInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+WARN 2025-02-17 15:35:31.641 main AbstractClassEnhancePluginDefine : enhance class springfox.documentation.swagger.web.ApiResourceController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v3.define.ControllerInstrumentation is not activated. Witness class org.springframework.web.servlet.view.xslt.AbstractXsltView does not exist. 
+WARN 2025-02-17 15:35:31.641 main AbstractClassEnhancePluginDefine : enhance class springfox.documentation.swagger.web.ApiResourceController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+WARN 2025-02-17 15:35:31.641 main AbstractClassEnhancePluginDefine : enhance class springfox.documentation.swagger.web.ApiResourceController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerForLowVersionInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+WARN 2025-02-17 15:35:31.717 main AbstractClassEnhancePluginDefine : enhance class org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v3.define.ControllerInstrumentation is not activated. Witness class org.springframework.web.servlet.view.xslt.AbstractXsltView does not exist. 
+WARN 2025-02-17 15:35:31.717 main AbstractClassEnhancePluginDefine : enhance class org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+WARN 2025-02-17 15:35:31.717 main AbstractClassEnhancePluginDefine : enhance class org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerForLowVersionInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+ERROR 2025-02-17 15:35:32.095 grpc-default-executor-1 EventReportServiceClient : Failed to report starting event. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at org.apache.skywalking.apm.dependencies.io.grpc.Status.asRuntimeException(Status.java:539)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:487)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.DelayedClientCall$DelayedListener$3.run(DelayedClientCall.java:489)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.DelayedClientCall$DelayedListener.delayOrExecute(DelayedClientCall.java:453)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.DelayedClientCall$DelayedListener.onClose(DelayedClientCall.java:486)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:576)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:70)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:757)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:736)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.skywalking.apm.dependencies.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:11800
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+ERROR 2025-02-17 15:35:32.096 SkywalkingAgent-6-JVMService-consume-0 JVMMetricsSender : send JVM metrics to Collector fail. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:271)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:252)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:165)
+	at org.apache.skywalking.apm.network.language.agent.v3.JVMMetricReportServiceGrpc$JVMMetricReportServiceBlockingStub.collect(JVMMetricReportServiceGrpc.java:169)
+	at org.apache.skywalking.apm.agent.core.jvm.JVMMetricsSender.run(JVMMetricsSender.java:82)
+	at org.apache.skywalking.apm.util.RunnableWithExceptionProtection.run(RunnableWithExceptionProtection.java:33)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.skywalking.apm.dependencies.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:11800
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+WARN 2025-02-17 15:35:32.788 main AbstractClassEnhancePluginDefine : enhance class org.apache.catalina.core.StandardHostValve by plugin org.apache.skywalking.apm.plugin.tomcat10x.define.TomcatInstrumentation is not activated. Witness class jakarta.servlet.http.HttpServletResponse does not exist. 
+WARN 2025-02-17 15:35:33.281 main AbstractClassEnhancePluginDefine : enhance class com.mysql.cj.jdbc.NonRegisteringDriver by plugin org.apache.skywalking.apm.plugin.jdbc.mysql.v6.define.CacheIpsDriverInstrumentation is not activated. Witness class com.mysql.cj.api.MysqlConnection does not exist. 
+WARN 2025-02-17 15:35:34.643 main AbstractClassEnhancePluginDefine : enhance class org.springframework.web.method.HandlerMethod by plugin org.apache.skywalking.apm.plugin.spring.mvc.v3.define.HandlerMethodInstrumentation is not activated. Witness class org.springframework.web.servlet.view.xslt.AbstractXsltView does not exist. 
+WARN 2025-02-17 15:35:34.643 main AbstractClassEnhancePluginDefine : enhance class org.springframework.web.method.HandlerMethod by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.HandlerMethodInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+WARN 2025-02-17 15:35:34.775 main AbstractClassEnhancePluginDefine : enhance class springfox.documentation.swagger2.web.Swagger2ControllerWebFlux by plugin org.apache.skywalking.apm.plugin.spring.mvc.v3.define.ControllerInstrumentation is not activated. Witness class org.springframework.web.servlet.view.xslt.AbstractXsltView does not exist. 
+WARN 2025-02-17 15:35:34.775 main AbstractClassEnhancePluginDefine : enhance class springfox.documentation.swagger2.web.Swagger2ControllerWebFlux by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+WARN 2025-02-17 15:35:34.775 main AbstractClassEnhancePluginDefine : enhance class springfox.documentation.swagger2.web.Swagger2ControllerWebFlux by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerForLowVersionInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+WARN 2025-02-17 15:35:34.911 main AbstractClassEnhancePluginDefine : enhance class org.springframework.web.method.support.InvocableHandlerMethod by plugin org.apache.skywalking.apm.plugin.spring.mvc.v3.define.InvocableHandlerInstrumentation is not activated. Witness class org.springframework.web.servlet.view.xslt.AbstractXsltView does not exist. 
+WARN 2025-02-17 15:35:34.911 main AbstractClassEnhancePluginDefine : enhance class org.springframework.web.method.support.InvocableHandlerMethod by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.InvocableHandlerInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+WARN 2025-02-17 15:35:35.089 main AbstractClassEnhancePluginDefine : enhance class springfox.documentation.swagger2.web.Swagger2ControllerWebMvc by plugin org.apache.skywalking.apm.plugin.spring.mvc.v3.define.ControllerInstrumentation is not activated. Witness class org.springframework.web.servlet.view.xslt.AbstractXsltView does not exist. 
+WARN 2025-02-17 15:35:35.089 main AbstractClassEnhancePluginDefine : enhance class springfox.documentation.swagger2.web.Swagger2ControllerWebMvc by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+WARN 2025-02-17 15:35:35.089 main AbstractClassEnhancePluginDefine : enhance class springfox.documentation.swagger2.web.Swagger2ControllerWebMvc by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerForLowVersionInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+WARN 2025-02-17 15:35:35.345 http-nio-8123-exec-1 AbstractClassEnhancePluginDefine : enhance class org.apache.catalina.core.ApplicationDispatcher by plugin org.apache.skywalking.apm.plugin.tomcat10x.define.ApplicationDispatcherInstrumentation is not activated. Witness class jakarta.servlet.http.HttpServletResponse does not exist. 
+INFO 2025-02-17 16:10:39.439 main SkyWalkingAgent : Skywalking agent transformer has installed. 
+INFO 2025-02-17 16:10:39.536 main Version : SkyWalking agent version: 9.3.0-8b9243c 
+INFO 2025-02-17 16:10:41.189 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-activemq-5.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.189 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-activemq-artemis-jakarta-client-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.189 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-aerospike-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.189 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-armeria-0.84.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.190 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-armeria-0.85.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.190 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-armeria-1.0.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.190 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-asynchttpclient-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.190 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-avro-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.190 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-c3p0-0.9.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.190 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-canal-1.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.190 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-cassandra-java-driver-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.191 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-clickhouse-0.3.1-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.191 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-clickhouse-0.3.2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.191 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-cxf-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.191 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-dubbo-2.7.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.191 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-dubbo-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.191 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-dubbo-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.191 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-elastic-job-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.192 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-elasticjob-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.192 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-elasticsearch-5.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.192 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-elasticsearch-6.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.192 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-elasticsearch-7.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.192 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-feign-default-http-9.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.192 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-finagle-6.25.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.192 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-grizzly-2.x-4.x-work-threadpool-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.192 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-grizzly-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.193 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-grpc-1.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.193 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-guava-eventbus-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.193 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-h2-1.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.193 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-hbase-1.x-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.193 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-hikaricp-3.x-4.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.193 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-httpasyncclient-4.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.193 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-httpclient-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.194 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-httpClient-4.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.194 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-httpclient-5.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.194 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-httpclient-commons-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.194 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-hutool-http-5.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.194 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-hystrix-1.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.194 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-influxdb-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.194 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-jdbc-commons-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.194 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-jersey-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.195 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-jersey-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.195 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-jetty-client-11.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.195 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-jetty-client-9.0-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.195 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-jetty-client-9.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.195 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-jetty-server-11.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.195 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-jetty-server-9.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.195 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-jetty-thread-pool-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.195 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-kafka-commons-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.195 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-kafka-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.195 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-kylin-jdbc-2.6.x-3.x-4.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.195 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-lettuce-5.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.197 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-light4j-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.197 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-mariadb-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.197 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-mongodb-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.197 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-mongodb-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.197 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-mongodb-4.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.197 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-mssql-commons-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.197 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-mssql-jdbc-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.198 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-mssql-jtds-1.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.198 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-mysql-5.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.198 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-mysql-6.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.198 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-mysql-8.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.198 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-mysql-commons-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.199 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-neo4j-4.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.199 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-netty-socketio-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.199 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-nutz-http-1.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.199 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-nutz-mvc-annotation-1.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.199 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-okhttp-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.199 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-okhttp-4.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.200 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-okhttp-common-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.200 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-play-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.200 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-postgresql-8.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.200 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-pulsar-2.2-2.7-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.200 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-pulsar-2.8.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.200 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-pulsar-common-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.200 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-quasar-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.201 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-rabbitmq-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.201 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-redisson-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.201 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-resttemplate-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.201 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-resttemplate-4.3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.202 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-rocketmq-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.202 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-rocketmq-4.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.202 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-rocketMQ-5.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.202 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-rocketmq-client-java-5.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.202 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-servicecomb-java-chassis-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.202 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-sharding-sphere-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.203 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-sharding-sphere-4.1.0-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.203 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-shardingsphere-4.0.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.203 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-shardingsphere-5.0.0-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.203 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-solrj-7.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.203 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-spring-async-annotation-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.203 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-spring-cloud-feign-1.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.204 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-spring-cloud-feign-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.204 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-spring-concurrent-util-4.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.204 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-spring-core-patch-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.204 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-spring-kafka-1.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.204 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-spring-kafka-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.204 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-spring-scheduled-annotation-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.205 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-springmvc-annotation-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.205 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-springmvc-annotation-4.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.205 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-springmvc-annotation-5.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.205 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-springmvc-annotation-commons-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.205 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-spymemcached-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.205 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-struts2-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.205 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-tomcat-thread-pool-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.205 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-undertow-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.205 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-undertow-worker-thread-pool-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.206 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-vertx-core-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.206 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-vertx-core-4.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.206 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-xmemcached-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.206 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\apm-xxl-job-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.206 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\baidu-brpc-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.206 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\baidu-brpc-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.207 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\dbcp-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.207 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\druid-1.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.207 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\dubbo-2.7.x-conflict-patch-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.207 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\dubbo-3.x-conflict-patch-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.207 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\dubbo-conflict-patch-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.208 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\elasticsearch-common-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.208 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\graphql-12.x-15.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.208 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\graphql-16plus-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.208 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\graphql-8.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.208 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\graphql-9.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.208 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\jedis-2.x-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.208 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\jedis-4.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.208 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\jsonrpc4j-1.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.209 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\micronaut-http-client-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.209 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\micronaut-http-server-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.209 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\motan-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.209 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\nats-2.14.x-2.15.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.209 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\okhttp-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.209 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\resteasy-server-3.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.209 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\resteasy-server-4.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.209 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\resteasy-server-6.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.210 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\resttemplate-commons-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.210 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\sofa-rpc-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.210 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\solon-2.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.210 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\spring-commons-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.210 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\spring-webflux-5.x-webclient-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.210 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\spring-webflux-6.x-webclient-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.210 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\thrift-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.210 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\tomcat-10x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.211 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\tomcat-7.x-8.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.211 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\plugins\websphere-liberty-23.x-plugin-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.211 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\activations\apm-toolkit-kafka-activation-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.211 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\activations\apm-toolkit-log4j-1.x-activation-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.212 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\activations\apm-toolkit-log4j-2.x-activation-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.212 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\activations\apm-toolkit-logback-1.x-activation-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.212 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\activations\apm-toolkit-logging-common-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.212 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\activations\apm-toolkit-meter-activation-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.212 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\activations\apm-toolkit-micrometer-activation-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.212 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\activations\apm-toolkit-opentracing-activation-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.212 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\activations\apm-toolkit-trace-activation-9.3.0.jar loaded. 
+INFO 2025-02-17 16:10:41.212 main AgentClassLoader : C:\Users\86180\Desktop\周睿\code\pictures-backend\skywalking-agent\activations\apm-toolkit-webflux-activation-9.3.0.jar loaded. 
+WARN 2025-02-17 16:10:41.679 main AbstractClassEnhancePluginDefine : enhance class org.springframework.web.client.RestTemplate by plugin org.apache.skywalking.apm.plugin.spring.resttemplate.sync.define.RestTemplateInstrumentation3x is not activated. Witness class org.springframework.web.context.support.ServletContextPropertyPlaceholderConfigurer does not exist. 
+WARN 2025-02-17 16:10:41.802 main AbstractClassEnhancePluginDefine : enhance class com.ruizhou.picturebackend.controller.FIleController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+WARN 2025-02-17 16:10:41.802 main AbstractClassEnhancePluginDefine : enhance class com.ruizhou.picturebackend.controller.FIleController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerForLowVersionInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+WARN 2025-02-17 16:10:41.818 main AbstractClassEnhancePluginDefine : enhance class com.ruizhou.picturebackend.controller.UserController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+WARN 2025-02-17 16:10:41.818 main AbstractClassEnhancePluginDefine : enhance class com.ruizhou.picturebackend.controller.UserController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.RestControllerForLowVersionInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+WARN 2025-02-17 16:10:42.320 main AbstractClassEnhancePluginDefine : enhance class springfox.documentation.swagger.web.ApiResourceController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v3.define.ControllerInstrumentation is not activated. Witness class org.springframework.web.servlet.view.xslt.AbstractXsltView does not exist. 
+WARN 2025-02-17 16:10:42.321 main AbstractClassEnhancePluginDefine : enhance class springfox.documentation.swagger.web.ApiResourceController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+WARN 2025-02-17 16:10:42.321 main AbstractClassEnhancePluginDefine : enhance class springfox.documentation.swagger.web.ApiResourceController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerForLowVersionInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+WARN 2025-02-17 16:10:42.411 main AbstractClassEnhancePluginDefine : enhance class org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v3.define.ControllerInstrumentation is not activated. Witness class org.springframework.web.servlet.view.xslt.AbstractXsltView does not exist. 
+WARN 2025-02-17 16:10:42.411 main AbstractClassEnhancePluginDefine : enhance class org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+WARN 2025-02-17 16:10:42.411 main AbstractClassEnhancePluginDefine : enhance class org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerForLowVersionInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+ERROR 2025-02-17 16:10:42.682 grpc-default-executor-1 EventReportServiceClient : Failed to report starting event. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at org.apache.skywalking.apm.dependencies.io.grpc.Status.asRuntimeException(Status.java:539)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls$StreamObserverToCallListenerAdapter.onClose(ClientCalls.java:487)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.DelayedClientCall$DelayedListener$3.run(DelayedClientCall.java:489)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.DelayedClientCall$DelayedListener.delayOrExecute(DelayedClientCall.java:453)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.DelayedClientCall$DelayedListener.onClose(DelayedClientCall.java:486)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:576)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:70)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:757)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:736)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at org.apache.skywalking.apm.dependencies.io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.skywalking.apm.dependencies.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:11800
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+ERROR 2025-02-17 16:10:42.684 SkywalkingAgent-6-JVMService-consume-0 JVMMetricsSender : send JVM metrics to Collector fail. 
+org.apache.skywalking.apm.dependencies.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:271)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:252)
+	at org.apache.skywalking.apm.dependencies.io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:165)
+	at org.apache.skywalking.apm.network.language.agent.v3.JVMMetricReportServiceGrpc$JVMMetricReportServiceBlockingStub.collect(JVMMetricReportServiceGrpc.java:169)
+	at org.apache.skywalking.apm.agent.core.jvm.JVMMetricsSender.run(JVMMetricsSender.java:82)
+	at org.apache.skywalking.apm.util.RunnableWithExceptionProtection.run(RunnableWithExceptionProtection.java:33)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.apache.skywalking.apm.dependencies.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:11800
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:779)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at org.apache.skywalking.apm.dependencies.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at org.apache.skywalking.apm.dependencies.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+WARN 2025-02-17 16:10:43.575 main AbstractClassEnhancePluginDefine : enhance class org.apache.catalina.core.StandardHostValve by plugin org.apache.skywalking.apm.plugin.tomcat10x.define.TomcatInstrumentation is not activated. Witness class jakarta.servlet.http.HttpServletResponse does not exist. 
+WARN 2025-02-17 16:10:44.096 main AbstractClassEnhancePluginDefine : enhance class com.mysql.cj.jdbc.NonRegisteringDriver by plugin org.apache.skywalking.apm.plugin.jdbc.mysql.v6.define.CacheIpsDriverInstrumentation is not activated. Witness class com.mysql.cj.api.MysqlConnection does not exist. 
+WARN 2025-02-17 16:10:45.600 main AbstractClassEnhancePluginDefine : enhance class org.springframework.web.method.HandlerMethod by plugin org.apache.skywalking.apm.plugin.spring.mvc.v3.define.HandlerMethodInstrumentation is not activated. Witness class org.springframework.web.servlet.view.xslt.AbstractXsltView does not exist. 
+WARN 2025-02-17 16:10:45.600 main AbstractClassEnhancePluginDefine : enhance class org.springframework.web.method.HandlerMethod by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.HandlerMethodInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+WARN 2025-02-17 16:10:45.787 main AbstractClassEnhancePluginDefine : enhance class springfox.documentation.swagger2.web.Swagger2ControllerWebFlux by plugin org.apache.skywalking.apm.plugin.spring.mvc.v3.define.ControllerInstrumentation is not activated. Witness class org.springframework.web.servlet.view.xslt.AbstractXsltView does not exist. 
+WARN 2025-02-17 16:10:45.787 main AbstractClassEnhancePluginDefine : enhance class springfox.documentation.swagger2.web.Swagger2ControllerWebFlux by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+WARN 2025-02-17 16:10:45.787 main AbstractClassEnhancePluginDefine : enhance class springfox.documentation.swagger2.web.Swagger2ControllerWebFlux by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerForLowVersionInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+WARN 2025-02-17 16:10:45.997 main AbstractClassEnhancePluginDefine : enhance class org.springframework.web.method.support.InvocableHandlerMethod by plugin org.apache.skywalking.apm.plugin.spring.mvc.v3.define.InvocableHandlerInstrumentation is not activated. Witness class org.springframework.web.servlet.view.xslt.AbstractXsltView does not exist. 
+WARN 2025-02-17 16:10:45.997 main AbstractClassEnhancePluginDefine : enhance class org.springframework.web.method.support.InvocableHandlerMethod by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.InvocableHandlerInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+WARN 2025-02-17 16:10:46.232 main AbstractClassEnhancePluginDefine : enhance class springfox.documentation.swagger2.web.Swagger2ControllerWebMvc by plugin org.apache.skywalking.apm.plugin.spring.mvc.v3.define.ControllerInstrumentation is not activated. Witness class org.springframework.web.servlet.view.xslt.AbstractXsltView does not exist. 
+WARN 2025-02-17 16:10:46.232 main AbstractClassEnhancePluginDefine : enhance class springfox.documentation.swagger2.web.Swagger2ControllerWebMvc by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+WARN 2025-02-17 16:10:46.232 main AbstractClassEnhancePluginDefine : enhance class springfox.documentation.swagger2.web.Swagger2ControllerWebMvc by plugin org.apache.skywalking.apm.plugin.spring.mvc.v4.define.ControllerForLowVersionInstrumentation is not activated. Witness class org.springframework.cache.interceptor.DefaultKeyGenerator does not exist. 
+WARN 2025-02-17 16:10:46.592 http-nio-8123-exec-1 AbstractClassEnhancePluginDefine : enhance class org.apache.catalina.core.ApplicationDispatcher by plugin org.apache.skywalking.apm.plugin.tomcat10x.define.ApplicationDispatcherInstrumentation is not activated. Witness class jakarta.servlet.http.HttpServletResponse does not exist. 
