@@ -3,6 +3,8 @@ server:
   servlet:
     context-path: /api
 spring:
+  profiles:
+    active: local
   application:
     name: picture-backend
   # 数据库配置
@@ -21,7 +23,11 @@ mybatis-plus:
       logic-delete-field: isDelete # 全局逻辑删除的实体字段名
       logic-delete-value: 1 # 逻辑已删除值（默认为 1）
       logic-not-delete-value: 0 # 逻辑未删除值（默认为 0）  # 接口文档配置
-# 接口文档配置
+#  minio:
+#    access-key: NMq5YfJBSHyEyvgw6DaL
+#    secret-key: G8bvNcSjrBYoIMFM9b48298XqOcmuN5cGhDJE3Fd
+#    url: http://121.43.184.212:19000  #访问地址
+#    bucket-name: public-bucket
 
 # 接口文档配置
 knife4j:
@@ -34,3 +40,11 @@ knife4j:
         api-rule: package
         api-rule-resources:
           - com.ruizhou.picturebackend.controller
+# 对象存储配置（需要从腾讯云获取）
+cos:
+  client:
+    host: https://picture-backend-1313029574.cos.ap-shanghai.myqcloud.com
+    secretId: AKIDwgIhrmSt76h6GBsLZYIn35sQkpfIgrnU
+    secretKey: UkmYA9tOgjLo34qOjpfLo37xaGwPuGNG
+    region: ap-shanghai
+    bucket: picture-backend-1313029574
