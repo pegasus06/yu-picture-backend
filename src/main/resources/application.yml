@@ -7,6 +7,9 @@ spring:
     active: local
   application:
     name: picture-backend
+  servlet:
+    multipart:
+      max-file-size: 10MB
   # 数据库配置
   datasource:
     url: jdbc:mysql://121.43.184.212:13306/picture_backend
