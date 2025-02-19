@@ -15,6 +15,7 @@ import com.ruizhou.picturebackend.model.dto.picture.PictureEditRequest;
 import com.ruizhou.picturebackend.model.dto.picture.PictureQueryRequest;
 import com.ruizhou.picturebackend.model.dto.picture.PictureUpdateRequest;
 import com.ruizhou.picturebackend.model.entity.Picture;
+import com.ruizhou.picturebackend.model.entity.PictureTagCategory;
 import com.ruizhou.picturebackend.model.entity.User;
 import com.ruizhou.picturebackend.model.vo.PictureVO;
 import com.ruizhou.picturebackend.service.PictureService;
@@ -28,7 +29,9 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 
 public class PictureController {
     @Resource
@@ -188,5 +191,15 @@ public class PictureController {
         ThrowUtils.throwIf(!result, ErrorCode.OPERATION_ERROR);
         return ResultUtils.success(true);
     }
+    @GetMapping("/tag_category")
+    public BaseResponse<PictureTagCategory> listPictureTagCategory() {
+        PictureTagCategory pictureTagCategory = new PictureTagCategory();
+        List<String> tagList = Arrays.asList("热门", "搞笑", "生活", "高清", "艺术", "校园", "背景", "简历", "创意");
+        List<String> categoryList = Arrays.asList("模板", "电商", "表情包", "素材", "海报");
+        pictureTagCategory.setTagList(tagList);
+        pictureTagCategory.setCategoryList(categoryList);
+        return ResultUtils.success(pictureTagCategory);
+    }
+
 
 }
