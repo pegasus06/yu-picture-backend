@@ -1,6 +1,7 @@
 package com.ruizhou.picturebackend.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.ruizhou.picturebackend.model.dto.picture.PictureQueryRequest;
 import com.ruizhou.picturebackend.model.dto.user.UserQueryRequest;
 import com.ruizhou.picturebackend.model.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
@@ -62,7 +63,7 @@ public interface UserService extends IService<User> {
 
     List<UserVO> getUserVOList(List<User> userList);
 
-    QueryWrapper<User> getQueryWrapper(UserQueryRequest userQueryRequest);
+    QueryWrapper<User> getQueryWrapper(UserQueryRequest userQueryRequest, PictureQueryRequest pictureQueryRequest);
     /**
      * 是否为管理员
      *

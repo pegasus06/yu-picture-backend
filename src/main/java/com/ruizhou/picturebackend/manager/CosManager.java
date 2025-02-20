@@ -19,6 +19,7 @@ public class CosManager {
 
     @Resource
     private COSClient cosClient;
+
     /**
      * 上传对象
      *
@@ -30,6 +31,7 @@ public class CosManager {
                 file);
         return cosClient.putObject(putObjectRequest);
     }
+
     /**
      * 下载对象
      *

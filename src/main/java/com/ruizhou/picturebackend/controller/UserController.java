@@ -11,6 +11,7 @@ import com.ruizhou.picturebackend.exception.ThrowUtils;
 import com.ruizhou.picturebackend.model.constant.UserConstant;
 import com.ruizhou.picturebackend.model.dto.UserLoginRequest;
 import com.ruizhou.picturebackend.model.dto.UserRegisterRequest;
+import com.ruizhou.picturebackend.model.dto.picture.PictureQueryRequest;
 import com.ruizhou.picturebackend.model.dto.user.UserAddRequest;
 import com.ruizhou.picturebackend.model.dto.user.UserQueryRequest;
 import com.ruizhou.picturebackend.model.dto.user.UserUpdateRequest;
@@ -139,12 +140,12 @@ public class UserController {
      */
     @PostMapping("/list/page/vo")
 //    @AuthCheck(mustRole = UserConstant.ADMIN_ROLE)
-    public BaseResponse<Page<UserVO>> listUserVOByPage(@RequestBody UserQueryRequest userQueryRequest) {
+    public BaseResponse<Page<UserVO>> listUserVOByPage(@RequestBody UserQueryRequest userQueryRequest, PictureQueryRequest pictureQueryRequest) {
         ThrowUtils.throwIf(userQueryRequest == null, ErrorCode.PARAMS_ERROR);
         long current = userQueryRequest.getCurrent();
         long pageSize = userQueryRequest.getPageSize();
         Page<User> userPage = userService.page(new Page<>(current, pageSize),
-                userService.getQueryWrapper(userQueryRequest));
+                userService.getQueryWrapper(userQueryRequest, pictureQueryRequest));
         Page<UserVO> userVOPage = new Page<>(current, pageSize, userPage.getTotal());
         List<UserVO> userVOList = userService.getUserVOList(userPage.getRecords());
         userVOPage.setRecords(userVOList);

@@ -8,6 +8,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.ruizhou.picturebackend.exception.BusinessException;
 import com.ruizhou.picturebackend.exception.ErrorCode;
+import com.ruizhou.picturebackend.model.dto.picture.PictureQueryRequest;
 import com.ruizhou.picturebackend.model.dto.user.UserQueryRequest;
 import com.ruizhou.picturebackend.model.entity.User;
 import com.ruizhou.picturebackend.model.enums.UserRoleEnum;
@@ -163,7 +164,7 @@ UserServiceImpl extends ServiceImpl<UserMapper, User>
     }
 
     @Override
-    public QueryWrapper<User> getQueryWrapper(UserQueryRequest userQueryRequest) {
+    public QueryWrapper<User> getQueryWrapper(UserQueryRequest userQueryRequest, PictureQueryRequest pictureQueryRequest) {
         if (userQueryRequest == null) {
             throw new BusinessException(ErrorCode.PARAMS_ERROR, "请求参数为空");
         }
@@ -174,7 +175,13 @@ UserServiceImpl extends ServiceImpl<UserMapper, User>
         String userRole = userQueryRequest.getUserRole();
         String sortField = userQueryRequest.getSortField();
         String sortOrder = userQueryRequest.getSortOrder();
+        Integer reviewStatus = pictureQueryRequest.getReviewStatus();
+        String reviewMessage = pictureQueryRequest.getReviewMessage();
+        Long reviewerId = pictureQueryRequest.getReviewerId();
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
+        queryWrapper.eq(ObjUtil.isNotEmpty(reviewStatus), "reviewStatus", reviewStatus);
+        queryWrapper.like(StrUtil.isNotBlank(reviewMessage), "reviewMessage", reviewMessage);
+        queryWrapper.eq(ObjUtil.isNotEmpty(reviewerId), "reviewerId", reviewerId);
         queryWrapper.eq(ObjUtil.isNotNull(id), "id", id);
         queryWrapper.eq(StrUtil.isNotBlank(userRole), "userRole", userRole);
         queryWrapper.like(StrUtil.isNotBlank(userAccount), "userAccount", userAccount);
@@ -188,7 +195,6 @@ UserServiceImpl extends ServiceImpl<UserMapper, User>
     public boolean isAdmin(User user) {
         return user != null && UserRoleEnum.ADMIN.getValue().equals(user.getUserRole());
     }
-
 
 
 }
