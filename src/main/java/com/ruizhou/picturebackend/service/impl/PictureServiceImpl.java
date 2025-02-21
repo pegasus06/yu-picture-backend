@@ -9,7 +9,9 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.ruizhou.picturebackend.exception.BusinessException;
 import com.ruizhou.picturebackend.exception.ErrorCode;
 import com.ruizhou.picturebackend.exception.ThrowUtils;
-import com.ruizhou.picturebackend.manager.FileManager;
+import com.ruizhou.picturebackend.manager.upload.FilePictureUpload;
+import com.ruizhou.picturebackend.manager.upload.PictureUploadTemplate;
+import com.ruizhou.picturebackend.manager.upload.UrlPictureUpload;
 import com.ruizhou.picturebackend.model.dto.PictureUploadRequest;
 import com.ruizhou.picturebackend.model.dto.UploadPictureResult;
 import com.ruizhou.picturebackend.model.dto.picture.PictureQueryRequest;
@@ -25,8 +27,8 @@ import com.ruizhou.picturebackend.service.UserService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.multipart.MultipartFile;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
 import java.util.List;
@@ -42,25 +44,26 @@ import java.util.stream.Collectors;
 @Service
 public class PictureServiceImpl extends ServiceImpl<PictureMapper, Picture>
         implements PictureService {
-    @Autowired
-    private FileManager fileManager;
+
     @Autowired
     private UserService userSerivce;
+    @Resource
+    private FilePictureUpload filePictureUpload;
 
-    public PictureServiceImpl(FileManager fileManager) {
-        this.fileManager = fileManager;
-    }
+    @Resource
+    private UrlPictureUpload urlPictureUpload;
+
 
     @Override
-    public PictureVO uploadPicture(MultipartFile multipartFile, PictureUploadRequest pictureUploadRequest, User loginUser) {
+    public PictureVO uploadPicture(Object inputSource, PictureUploadRequest pictureUploadRequest, User loginUser) {
         ThrowUtils.throwIf(loginUser == null, ErrorCode.NO_AUTH_ERROR);
+        ThrowUtils.throwIf(inputSource == null, ErrorCode.PARAMS_ERROR, "图片为空");
         // 用于判断是新增还是更新图片
         Long pictureId = null;
         if (pictureUploadRequest != null) {
             pictureId = pictureUploadRequest.getId();
         }
         // 如果是更新图片，需要校验图片是否存在
-// 如果是更新图片，需要校验图片是否存在
         if (pictureId != null) {
             Picture oldPicture = this.getById(pictureId);
             ThrowUtils.throwIf(oldPicture == null, ErrorCode.NOT_FOUND_ERROR, "图片不存在");
@@ -69,11 +72,15 @@ public class PictureServiceImpl extends ServiceImpl<PictureMapper, Picture>
                 throw new BusinessException(ErrorCode.NO_AUTH_ERROR);
             }
         }
-
         // 上传图片，得到信息
         // 按照用户 id 划分目录
         String uploadPathPrefix = String.format("public/%s", loginUser.getId());
-        UploadPictureResult uploadPictureResult = fileManager.uploadPicture(multipartFile, uploadPathPrefix);
+        // 根据 inputSource 类型区分上传方式
+        PictureUploadTemplate pictureUploadTemplate = filePictureUpload;
+        if (inputSource instanceof String) {
+            pictureUploadTemplate = urlPictureUpload;
+        }
+        UploadPictureResult uploadPictureResult = pictureUploadTemplate.uploadPicture(inputSource, uploadPathPrefix);
         // 构造要入库的图片信息
         Picture picture = new Picture();
         picture.setUrl(uploadPictureResult.getUrl());
