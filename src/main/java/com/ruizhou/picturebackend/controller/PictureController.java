@@ -282,5 +282,6 @@ public class PictureController {
         int cacheExpireTime = 300 + RandomUtil.randomInt(0, 300);
         valueOperations.set(redisKey, cacheValue, cacheExpireTime, TimeUnit.SECONDS);
         return ResultUtils.success(pictureVOPage);
+
     }
 }
