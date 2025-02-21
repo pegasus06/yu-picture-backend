@@ -3,6 +3,12 @@ server:
   servlet:
     context-path: /api
 spring:
+  redis:
+    database: 0
+    host: 121.43.184.212
+    port: 26739
+    timeout: 5000
+    password: jcG87AiDhDb2bMxE
   profiles:
     active: local
   application:
@@ -19,7 +25,7 @@ spring:
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: false
-      # 仅在开发环境开启日志
+    # 仅在开发环境开启日志
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   global-config:
     db-config:

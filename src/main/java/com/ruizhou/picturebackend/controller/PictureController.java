@@ -1,6 +1,8 @@
 package com.ruizhou.picturebackend.controller;
 
+import cn.hutool.core.util.RandomUtil;
 import cn.hutool.json.JSONUtil;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.ruizhou.picturebackend.annotation.AuthCheck;
 import com.ruizhou.picturebackend.common.BaseResponse;
@@ -11,10 +13,7 @@ import com.ruizhou.picturebackend.exception.ErrorCode;
 import com.ruizhou.picturebackend.exception.ThrowUtils;
 import com.ruizhou.picturebackend.model.constant.UserConstant;
 import com.ruizhou.picturebackend.model.dto.PictureUploadRequest;
-import com.ruizhou.picturebackend.model.dto.picture.PictureEditRequest;
-import com.ruizhou.picturebackend.model.dto.picture.PictureQueryRequest;
-import com.ruizhou.picturebackend.model.dto.picture.PictureReviewRequest;
-import com.ruizhou.picturebackend.model.dto.picture.PictureUpdateRequest;
+import com.ruizhou.picturebackend.model.dto.picture.*;
 import com.ruizhou.picturebackend.model.entity.Picture;
 import com.ruizhou.picturebackend.model.entity.PictureTagCategory;
 import com.ruizhou.picturebackend.model.entity.User;
@@ -22,7 +21,11 @@ import com.ruizhou.picturebackend.model.enums.PictureReviewStatusEnum;
 import com.ruizhou.picturebackend.model.vo.PictureVO;
 import com.ruizhou.picturebackend.service.PictureService;
 import com.ruizhou.picturebackend.service.UserService;
+import org.apache.commons.lang3.RandomUtils;
 import org.springframework.beans.BeanUtils;
+import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.data.redis.core.ValueOperations;
+import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -34,12 +37,16 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 public class PictureController {
     @Resource
     private UserService userService;
     @Resource
     private PictureService pictureService;
+    @Resource
+    private StringRedisTemplate stringRedisTemplate;
 
     /**
      * 上传图片（可重新上传）
@@ -235,4 +242,45 @@ public class PictureController {
         return ResultUtils.success(pictureVO);
     }
 
+    @PostMapping("/upload/batch")
+    @AuthCheck(mustRole = UserConstant.ADMIN_ROLE)
+    public BaseResponse<Integer> uploadPictureByBatch(
+            @RequestBody PictureUploadByBatchRequest pictureUploadByBatchRequest,
+            HttpServletRequest request
+    ) {
+        ThrowUtils.throwIf(pictureUploadByBatchRequest == null, ErrorCode.PARAMS_ERROR);
+        User loginUser = userService.getLoginUser(request);
+        int uploadCount = pictureService.uploadPictureByBatch(pictureUploadByBatchRequest, loginUser);
+        return ResultUtils.success(uploadCount);
+    }
+
+    @PostMapping("/list/page/vo/cache")
+    public BaseResponse<Page<PictureVO>> listPictureVOByPageWithCache(@RequestBody PictureQueryRequest pictureQueryRequest,
+                                                                      HttpServletRequest request) {
+        long current = pictureQueryRequest.getCurrent();
+        long size = pictureQueryRequest.getPageSize();
+        ThrowUtils.throwIf(size > 20, ErrorCode.PARAMS_ERROR);
+        // 普通用户默认只能查看已过审的数据
+        pictureQueryRequest.setReviewStatus(PictureReviewStatusEnum.PASSED.getValue());
+        // 构建缓存 key
+        String queryCondition = JSONUtil.toJsonStr(pictureQueryRequest);
+        String hashKey = DigestUtils.md5DigestAsHex(queryCondition.getBytes());
+        String redisKey = "picture:listPictureVOByPage:" + hashKey;
+        // 从 Redis 缓存中查询
+        ValueOperations<String, String> valueOperations = stringRedisTemplate.opsForValue();
+        String cachedValue = valueOperations.get(redisKey);
+        if (cachedValue != null) {
+            Page<PictureVO> cachedPage = JSONUtil.toBean(cachedValue, Page.class);
+            return ResultUtils.success(cachedPage);
+        }
+        // 缓存不存在，查询数据库
+        Page<Picture> picturePage = pictureService.page(new Page<>(current, size), pictureService.getQueryWrapper(pictureQueryRequest));
+        // 将查询结果转换为 VO
+        Page<PictureVO> pictureVOPage = pictureService.getPictureVOPage(picturePage, request);
+        // 将查询结果转换为 JSON 字符串
+        String cacheValue = JSONUtil.toJsonStr(pictureVOPage);
+        int cacheExpireTime = 300 + RandomUtil.randomInt(0, 300);
+        valueOperations.set(redisKey, cacheValue, cacheExpireTime, TimeUnit.SECONDS);
+        return ResultUtils.success(pictureVOPage);
+    }
 }
