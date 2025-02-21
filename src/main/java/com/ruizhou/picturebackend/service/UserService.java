@@ -26,6 +26,7 @@ public interface UserService extends IService<User> {
      * @return 新用户 id
      */
     long userRegister(String userAccount, String userPassword, String checkPassword);
+
     /**
      * 用户登录
      *
@@ -37,6 +38,7 @@ public interface UserService extends IService<User> {
     LoginUserVO userLogin(String userAccount, String userPassword, HttpServletRequest request);
 
     String getEncryptPassword(String userPassword);
+
     /**
      * 获取脱敏的已登录用户信息
      *
@@ -51,6 +53,7 @@ public interface UserService extends IService<User> {
      * @return
      */
     User getLoginUser(HttpServletRequest request);
+
     /**
      * 用户注销
      *
@@ -64,6 +67,7 @@ public interface UserService extends IService<User> {
     List<UserVO> getUserVOList(List<User> userList);
 
     QueryWrapper<User> getQueryWrapper(UserQueryRequest userQueryRequest, PictureQueryRequest pictureQueryRequest);
+
     /**
      * 是否为管理员
      *
