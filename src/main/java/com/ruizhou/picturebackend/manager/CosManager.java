@@ -1,15 +1,19 @@
 package com.ruizhou.picturebackend.manager;
 
+import cn.hutool.core.io.FileUtil;
 import com.qcloud.cos.COSClient;
 import com.qcloud.cos.model.COSObject;
 import com.qcloud.cos.model.GetObjectRequest;
 import com.qcloud.cos.model.PutObjectRequest;
 import com.qcloud.cos.model.PutObjectResult;
+import com.qcloud.cos.model.ciModel.persistence.PicOperations;
 import com.ruizhou.picturebackend.config.CosClientConfig;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 import java.io.File;
+import java.util.LinkedList;
+import java.util.List;
 
 @Component
 public class CosManager {
@@ -42,5 +46,21 @@ public class CosManager {
         return cosClient.getObject(getObjectRequest);
     }
 
+    public PutObjectResult putPictureObject(String key, File file) {
+        PutObjectRequest putObjectRequest = new PutObjectRequest(cosClientConfig.getBucket(), key, file);
+        PicOperations picOperations = new PicOperations();
+        picOperations.setIsPicInfo(1);
+        // 添加图片处理规则
+        List<PicOperations.Rule> ruleList = new LinkedList<>();
+        PicOperations.Rule rule1 = new PicOperations.Rule();
+        String newName = FileUtil.mainName(file) + ".webp";
+        rule1.setBucket(cosClientConfig.getBucket());
+        rule1.setFileId(newName);
+        rule1.setRule("imageMogr2/format/webp");
+        ruleList.add(rule1);
+        picOperations.setRules(ruleList);
+        putObjectRequest.setPicOperations(picOperations);
+        return cosClient.putObject(putObjectRequest);
+    }
 }
 
