@@ -40,5 +40,7 @@ public class UploadPictureResult {
      */
     private String picFormat;
 
+    private String thumbnailUrl;
+
 }
 
